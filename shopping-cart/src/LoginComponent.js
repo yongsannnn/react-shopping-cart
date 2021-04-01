@@ -1,8 +1,9 @@
 import React from "react"
 import { useState } from "react"
 import axios from "axios"
+import config from "./config"
 
-const baseUrl = "https://3000-aqua-canid-3knbtzpy.ws-us03.gitpod.io"
+const baseUrl = config.baseUrl
 
 export default function LoginComponent() {
     const [email, setEmail] = useState("")
